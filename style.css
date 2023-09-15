@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+html{
+    font-size: 100%;
+}
+
 body{
     margin: 0px;
     font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
 }
 
 .top-part{
@@ -10,8 +16,8 @@ body{
     gap: 25px;
     background-color: #1F2937;
     margin: 0;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 12%;
+    padding-right: 12%;
     padding-bottom: 100px;
 }
 
@@ -35,7 +41,6 @@ body{
 
 .top-links{
     display: flex;
-
 }
 
 .top-links a{
@@ -47,13 +52,15 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    min-width: 750px;
+    max-height: 500px;
+    align-items: stretch;
 }
 
 .left-info{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
 }
 
 .title-info{
@@ -79,8 +86,16 @@ body{
     border: 0;
 }
 
-img{
-    height: 250px;
+.right-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.right-image img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 li{
@@ -88,4 +103,55 @@ li{
 }
 a{
     text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .right-image img {
+        max-width: 460px;
+        object-fit: contain;
+    }
+}
+#square-title{
+    font-size: 30px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 40px;
+}
+.square-part{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.square-pack{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.square{
+    align-self: flex-start;
+    border-style: solid;
+    height: 150px;
+    width: 150px;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #3882F6;
+}
+
+.pack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    
+}
+.square-text{
+    font-size: 18px;
+    color: #40434a;
+    font-weight: 500;
+    inline-size: 150px;
+    overflow-wrap: break-word;
 }

@@ -135,7 +135,7 @@ a{
     flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 50px;
-
+    margin-bottom: 50px;
 }
 
 .square{
@@ -161,4 +161,107 @@ a{
     inline-size: 150px;
     overflow-wrap: break-word;
     text-align: center;
+}
+
+.quote-part{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.quote-text{
+    font-size: 24px;
+    text-align: left;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author{
+    font-size: 21px;
+    text-align: right;
+    color: #101318;
+}
+.ad-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #3882F6;
+    padding: 50px 70px;
+    display: flex;
+    border-radius: 5px; 
+    align-items: center;
+    gap: 200px;
+}
+
+@media (max-width: 750px) {
+    .ad{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: #3882F6;
+        padding: 50px 70px;
+        display: flex;
+        border-radius: 5px; 
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.ad-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+.ad-title{
+    color:#E5E7EB;
+    font-weight: 800;
+    font-size: 30px;
+}
+.ad-desc{
+    color:#c6c6de;
+    font-weight: 800;
+    font-size: 15px;
+}
+.ad-btn{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-width: 3px;
+    padding: 7px;
+    border-radius: 4px;
+    border-style: solid;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    min-height: 25px;
+    color: #E5E7EB;
+    font-weight: 800;
+}
+
+.footer-part{
+    background-color: #1F2937;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    color:#828996;
+    font-weight: 800;
 }

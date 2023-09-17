@@ -187,12 +187,12 @@ a{
     text-align: right;
     color: #101318;
 }
-.ad-part{
+.sign-part{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ad{
+.sign{
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -206,7 +206,7 @@ a{
 }
 
 @media (max-width: 750px) {
-    .ad{
+    .sign{
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: #3882F6;
@@ -218,24 +218,24 @@ a{
     }
 }
 
-.ad-text{
+.sign-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     gap: 5px;
 }
-.ad-title{
+.sign-title{
     color:#E5E7EB;
     font-weight: 800;
     font-size: 30px;
 }
-.ad-desc{
+.sign-desc{
     color:#c6c6de;
     font-weight: 800;
     font-size: 15px;
 }
-.ad-btn{
+.sign-btn{
     font-family: 'Roboto';
     display: flex;
     justify-content: center;
